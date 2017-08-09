@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN""http：//www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http：//www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>大屏幕-故障分类</title>
+		<link rel="stylesheet" href="css/bigScreen.css" />
+	</head>
+
+	<body>
+		<div class="bs-box">
+			<div class="bs-repairs">
+				<div class="bs-reBox">
+					<!--维修统计-->
+					<div class="bs-maintainCount clearfix">
+						<h2 class="bs-countTitle">故障分类统计（年）</h2>
+						<div id="bs-break" style="width:45%;min-height:300px;" class="fl"></div>
+						<div class="bs-breakDetails fr">
+							<ul class="clearfix" style="display: block;">
+								<li>
+									<ul class="clearfix">
+										<li class="break-title bs-sw">事务</li>
+										<li>
+											<p class="bs-hr">1280</p>
+											<p>占40%</p>
+										</li>
+									</ul>
+									<p>未接收：320（20%）</p>
+									<p>已完修：320（20%）</p>
+									<p>未完修：320（20%）</p>
+								</li>
+								<li>
+									<ul class="clearfix">
+										<li class="break-title bs-tz">台账</li>
+										<li>
+											<p class="bs-hr">1280</p>
+											<p>占40%</p>
+										</li>
+									</ul>
+									<p>未接收：320（20%）</p>
+									<p>已完修：320（20%）</p>
+									<p>未完修：320（20%）</p>
+								</li>
+								<li>
+									<ul class="clearfix">
+										<li class="break-title bs-qt">其他</li>
+										<li>
+											<p class="bs-hr">1280</p>
+											<p>占40%</p>
+										</li>
+									</ul>
+									<p>未接收：320（20%）</p>
+									<p>已完修：320（20%）</p>
+									<p>未完修：320（20%）</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--维修人员-->
+					<div class="bs-maintainPerson clearfix" style="margin-bottom: 0;">
+						<h2 class="bs-countTitle">故障原因统计</h2>
+						<div id="bs-maincountBreak" style="width: 45%;min-height:300px;background: #3a3e52;" class="fl"></div>
+						
+						<div class="bs-maincountList fr">
+							<ul class="clearfix">
+								<li>
+									<p><i class="bs-dy mr10"></i>电&emsp;源<label class="ml10">12%</label></p>
+									<p><i class="bs-sy mr10"></i>水&emsp;源<label class="ml10">22%</label></p>
+									<p><i class="bs-wd mr10"></i>温&emsp;度<label class="ml10">6%</label></p>
+									<p><i class="bs-sd mr10"></i>湿&emsp;度<label class="ml10">10%</label></p>
+									<p><i class="bs-qy mr10"></i>气&emsp;源<label class="ml10">16%</label></p>
+								</li>
+								<li>
+									<p><i class="bs-bybd mr10"></i>保养不当<label class="ml10">12%</label></p>
+									<p><i class="bs-czbd mr10"></i>操作不当<label class="ml10">22%</label></p>
+									<p><i class="bs-jzst mr10"></i>校正失调<label class="ml10">6%</label></p>
+									<p><i class="bs-dcgr mr10"></i>电磁干扰<label class="ml10">10%</label></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="bs-footer">
+						<ul class="clearfix">
+							<li class="fl">
+								<label>技术支持：杭州爱惠信息技术有限公司</label>
+								<label>电话：15355008391</label>
+								<label>网址：http://www.aihuisys.com/</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bs-right">
+					<div class="bs-count">
+						<p class="bs-title">报修情况</p>
+						<div class="bs-enginner">
+							<div class="bs-chart">
+								<canvas id="canvas1" width="180" height="180"></canvas>
+								<canvas id="canvas2" width="180" height="180"></canvas>
+								<h2 class="bs-getNUm"><i>总计</i><i>285</i></h2>
+							</div>
+							<div class="bs-chartText">
+								<label class="bs-textRe">
+									<i>紧急</i>
+									<i>200</i>
+								</label>
+								<label class="bs-textNre">
+									<i>普通</i>
+									<i>129</i>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!--工程师-->
+					<div class="bs-engineer-box">
+						<p class="bs-title">维修人员</p>
+						<div class="bs-enginner" id="scroll-engineer">
+							<ul id="scroll-enBegin">
+								<li>
+									<p class="bs-person clearfix">
+										<label class="fl"><i class="bs-icon bs-people"></i>李某某</label>
+										<label class="fr">8/10</label>
+									</p>
+								</li>
+								<li>
+									<p class="bs-person clearfix">
+										<label class="fl"><i class="bs-icon bs-people"></i>李某某</label>
+										<label class="fr">8/10</label>
+									</p>
+								</li>
+								<li>
+									<p class="bs-person clearfix">
+										<label class="fl"><i class="bs-icon bs-people"></i>李某某</label>
+										<label class="fr">8/10</label>
+									</p>
+								</li>
+								<li>
+									<p class="bs-person clearfix">
+										<label class="fl"><i class="bs-icon bs-people"></i>李某某</label>
+										<label class="fr">8/10</label>
+									</p>
+								</li>
+								<li>
+									<p class="bs-person clearfix">
+										<label class="fl"><i class="bs-icon bs-people"></i>李某某</label>
+										<label class="fr">8/10</label>
+									</p>
+								</li>
+								<li>
+									<p class="bs-person clearfix">
+										<label class="fl"><i class="bs-icon bs-people"></i>李某某</label>
+										<label class="fr">8/10</label>
+									</p>
+								</li>
+							</ul>
+							<ul id="scroll-enEnd"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/highcharts.js"></script>
+		<script type="text/javascript" src="js/highcharts-more.js"></script>
+		<script type="text/javascript" src="js/solid-gauge.js"></script>
+		<!--除了主界面index.html,其他子页面引用都是为了右边，-->
+		<script type="text/javascript" src="js/bigScreen.js"></script>
+		<script type="text/javascript" src="js/countBreak.js"></script>
+	</body>
+
+</html>
